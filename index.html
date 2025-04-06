@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamborghini | Official</title>
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <div class="preloader">
+        <div class="loader">
+            <img src="assets/images/logo1.png" alt="Lamborghini Logo" class="preloader-logo">
+        </div>
+    </div>
+    <header class="header">
+        <div class="logo-container">
+            <img src="assets/images/logo.jpg" alt="Lamborghini Logo" class="logo">
+            <span class="logo-text">LAMBORGHINI</span>
+        </div>
+        <button class="burger-menu" aria-label="Открыть меню">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#hero">Главная</a></li>
+                <li><a href="#models">Модели</a></li>
+                <li><a href="#about">О компании</a></li>
+                <li><a href="#why-us">Почему мы?</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero" class="hero-section">
+        <div class="video-background">
+            <iframe src="https://www.youtube.com/embed/fdS1ZQ7WJMk?autoplay=1&mute=1&loop=1&playlist=fdS1ZQ7WJMk&controls=0&showinfo=0" 
+                    frameborder="0" 
+                    allowfullscreen></iframe>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">LAMBORGHINI</h1>
+            <p class="hero-subtitle">Добро пожаловать в мир скорости</p>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+    <section id="models" class="models-section" data-aos="fade-up">
+        <div class="section-header" data-aos="fade-down">
+            <h2>Модельный ряд</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="models-container">
+            <div class="model-selector" data-aos="fade-up" data-aos-delay="200">
+                <button class="model-btn active" data-model="urus">Urus</button>
+                <button class="model-btn" data-model="aventador">Aventador</button>
+                <button class="model-btn" data-model="huracan">Huracán</button>
+                <button class="model-btn" data-model="sian">Sián</button>
+                <button class="model-btn" data-model="revuelto">Revuelto</button>
+            </div>
+            <div class="model-display" data-aos="fade-up" data-aos-delay="400">
+                <div class="model-viewer">
+                    <model-viewer
+                        id="model-viewer"
+                        src="assets/models/lamborghini_urus.glb"
+                        alt="Lamborghini Urus 3D Model"
+                        auto-rotate
+                        camera-controls
+                        shadow-intensity="1"
+                        camera-orbit="45deg 55deg 2.5m"
+                        field-of-view="30deg"
+                        style="width: 100%; height: 100%;"
+                    ></model-viewer>
+                </div>
+                <div class="model-specs">
+                    <h3 class="model-name">Urus</h3>
+                    <ul class="specs-list">
+                        <li><span>Двигатель:</span> 4.0 л V8 Twin-Turbo</li>
+                        <li><span>Мощность:</span> 650 л.с. @ 6,000 об/мин</li>
+                        <li><span>Разгон 0-100 км/ч:</span> 3.6 сек</li>
+                        <li><span>Макс. скорость:</span> 305 км/ч</li>
+                        <li><span>Цена от:</span> ₽20,000,000</li>
+                    </ul>
+                    <p class="model-description">Первый в мире Super SUV, идеально подходящий для ежедневных поездок и экстремальных приключений.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="about-section" data-aos="fade-up">
+        <div class="section-header" data-aos="fade-down">
+            <h2>Наша история</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text" data-aos="fade-right">
+                <p>Automobili Lamborghini S.p.A. — итальянская компания, производитель дорогих спортивных автомобилей под маркой Lamborghini. Штаб-квартира компании расположена в коммуне Сант-Агата-Болоньезе, около Болоньи.</p>
+                <p>Компания основана в 1963 году Ферруччо Ламборгини, на тот момент уже известным производителем тракторов. Его цель была — создать совершенный дорожный автомобиль, который мог бы конкурировать с моделями от Ferrari.</p>
+                <p>Первой моделью компании стал Lamborghini 350 GT, представленный в 1964 году. С тех пор Lamborghini стала символом роскоши, мощности и инноваций в автомобилестроении.</p>
+            </div>
+            <div class="about-image" data-aos="fade-left">
+                <img src="assets/images/factory.jpg" alt="Lamborghini Factory">
+            </div>
+        </div>
+    </section>
+    <section id="why-us" class="why-us-section" data-aos="fade-up">
+        <div class="section-header" data-aos="fade-down">
+            <h2>Почему мы?</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="why-us-content" data-aos="fade-up" data-aos-delay="200">
+            <p>Мы — это не просто автомобили. Мы — воплощение мечты, страсти и безграничной свободы. Каждый Lamborghini создаётся с душой, чтобы вы почувствовали себя на вершине мира.</p>
+            <p>Наши машины — это сочетание передовых технологий и итальянского дизайна, который заставляет сердца биться чаще. Мы не следуем трендам, мы их создаём. Выбирая Lamborghini, вы выбираете эксклюзивность, мощь и стиль, которые не имеют равных.</p>
+            <p>Мы здесь, чтобы вдохновлять. Мы здесь, чтобы бросать вызов. Мы здесь, чтобы вы могли сказать: "Я — Lamborghini".</p>
+        </div>
+    </section>
+    <section id="gallery" class="gallery-section" data-aos="fade-up">
+        <div class="section-header" data-aos="fade-down">
+            <h2>Галерея Lamborghini</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                <img src="assets/images/lamborghini_urus.jpg" alt="Lamborghini Urus">
+                <div class="gallery-overlay">
+                    <h3>Lamborghini Urus</h3>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                <img src="assets/images/lamborghini_aventador.jpg" alt="Lamborghini Aventador">
+                <div class="gallery-overlay">
+                    <h3>Lamborghini Aventador</h3>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                <img src="assets/images/lamborghini_huracan.jpg" alt="Lamborghini Huracán">
+                <div class="gallery-overlay">
+                    <h3>Lamborghini Huracán</h3>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                <img src="assets/images/lamborghini_sian.jpg" alt="Lamborghini Sián">
+                <div class="gallery-overlay">
+                    <h3>Lamborghini Sián</h3>
+                </div>
+            </div>
+            <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                <img src="assets/images/lamborghini_revuelto.jpg" alt="Lamborghini Revuelto">
+                <div class="gallery-overlay">
+                    <h3>Lamborghini Revuelto</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section" data-aos="fade-up">
+        <div class="section-header" data-aos="fade-down">
+            <h2>Контакты</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
+            <div class="contact-details">
+                <h3>Штаб-квартира</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Via Modena, 12, 40019 Sant'Agata Bolognese BO, Италия</p>
+                <p><i class="fas fa-phone"></i> +39 051 959 7282</p>
+                <p><i class="fas fa-envelope"></i> info@lamborghini.com</p>
+                <p><i class="fas fa-clock"></i> Пн-Пт: 9:00 - 18:00 (CET)</p>
+            </div>
+            <div class="social-links">
+                <a href="https://vk.com" target="_blank" class="social-link">
+                    <i class="fab fa-vk"></i>
+                    <span>ВКонтакте</span>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="social-link">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://twitch.tv" target="_blank" class="social-link">
+                    <i class="fab fa-twitch"></i>
+                    <span>Twitch</span>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/images/logo.jpg" alt="Lamborghini Logo">
+                <span>LAMBORGHINI</span>
+            </div>
+            <div class="footer-copyright">
+                © 2025 Automobili Lamborghini S.p.A. Все права защищены.
+            </div>
+        </div>
+    </footer>
+    <button id="scroll-to-top" title="Наверх">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <script src="js/main.js"></script>
+</body>
+</html>
